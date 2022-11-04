@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript date object</title>
+</head>
+<body>
+    <p id="demo" onmouseover="JavascriptDate()">Javascript date</p>
+    <script>
+        function JavascriptDate()
+    {
+          //d = new Date("2022-03-25");
+          //const d = new Date("2022-03-25");
+          //const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+         //javascript counts month from 0 to 11 means jan is 0 , and december is 11
+         //6 numbers specify year, month, day, hour, minute, second:
+         //const d = new Date(2018, 11, 24, 10, 33, 30);
+         //5 numbers specify year, month, day, hour, and minute:
+         //const d = new Date(2018, 11, 24, 10, 33);
+         //4 numbers specify year, month, day, and hour:
+         //const d = new Date(2018, 11, 24, 10);
+         //3 numbers specify year, month, and day:
+         //const d = new Date(2018, 11, 24);
+         //2 numbers specify year and month:
+         //const d = new Date(2018, 11);
+         //You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+         //const d = new Date(2018);
+         //One and two digit years will be interpreted as 19xx:
+         //const d = new Date(99, 11, 24);
+         //const d = new Date(9, 11, 24);
+         //January 01 1970 minus 100 000 000 000 milliseconds is:
+         //const d = new Date(-100000000000);
+         //January 01 1970 pluss 24 hours is:
+         //const d = new Date(24 * 60 * 60);
+         // or
+         //const d = new Date(86400000);
+        const d = new Date("October 13, 2014 11:13:00");
+
+        return document.getElementById('demo').innerHTML = "after mouse overing on the content <br> " + 
+        +"you will get the whole date format <br> " +"<hr> " +d;
+
+    }
+
+    // date methods()
+    //When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+    //const d = new Date();
+    //d.toString();
+    //The toDateString() method converts a date to a more readable format:
+    //const d = new Date();
+    //d.toDateString();
+    //The toUTCString() method converts a date to a string using the UTC standard:
+    //const d = new Date();
+    //d.toUTCString();
+   //The toISOString() method converts a date to a string using the ISO standard:
+   //const d = new Date();
+   //d.toISOString();
+   
+   //Javascript date formats
+   //ISO Date
+     //	"2015-03-25" (The International Standard)
+   //Short Date
+      //"03/25/2015"
+//Long Date
+     //	"Mar 25 2015" or "25 Mar 2015"
+
+
+     //date get  methods
+
+     //getFullYear() ... Get year as a four digit number (yyyy)
+     //getMonth()   ...  	Get month as a number (0-11)
+     //getDate()    ...   Get day as a number (1-31)
+     //getDay()    ... Get weekday as a number (0-6)
+     //getHours()  ...  Get hour (0-23)
+     //getMinutes()  ...Get minute (0-59)
+     //getSeconds()  ... Get second (0-59)
+     //getMilliseconds() ... 	Get millisecond (0-999)
+     //getTime()  ... Get time (milliseconds since January 1, 1970)
+     //The Date.now() Method   The syntax is always Date.now().
+
+
+
+
+    </script>
+    
+</body>
+</html>
